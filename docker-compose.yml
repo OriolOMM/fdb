@@ -1,10 +1,11 @@
 version: "3.7"
 networks:
-  node-red-net:
+  fdb-net:
 
 volumes:
   mqtt:
   node-red:
+  flogo:
 
 services:
   node-red:
@@ -17,7 +18,7 @@ services:
     environment:
       - TZ=Europe/Amsterdam
     networks:
-      - node-red-net
+      - fdb-net
   
   mqtt:
     container_name: mqtt
@@ -28,4 +29,5 @@ services:
     volumes:
       - mqtt:/mosquitto/data
     networks:
-      - node-red-net
+      - fdb-net
+  
