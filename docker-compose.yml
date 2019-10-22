@@ -1,0 +1,31 @@
+version: "3.7"
+networks:
+  node-red-net:
+
+volumes:
+  mqtt:
+  node-red:
+
+services:
+  node-red:
+    container_name: node-red
+    image: nodered/node-red
+    ports:
+      - "1880:1880"
+    volumes:
+      - node-red:/data
+    environment:
+      - TZ=Europe/Amsterdam
+    networks:
+      - node-red-net
+  
+  mqtt:
+    container_name: mqtt
+    image: eclipse-mosquitto
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - mqtt:/mosquitto/data
+    networks:
+      - node-red-net
