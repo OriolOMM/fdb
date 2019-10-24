@@ -1,0 +1,55 @@
+{
+    "action": {
+        "module": "color",
+        "value": "color",
+        "data": {
+            "color": [{
+                "color": "#00FFFF",
+                "seconds": 2.5
+            }],
+            "default-sound": "sound.mp3",
+            "vibration": 0.5,
+            "loop": false
+        },
+        "aref": "string",
+        "filters": []
+    }
+}
+
+{
+    "action": {
+        "module": "hardware",
+        "value": "torch",
+        "data": {
+            "​torch​": [{
+                "active": true,
+                "seconds": 2.1
+            }],
+            "default-sound": "sound.mp3",
+            "vibration": 0.5,
+            "​loop​"​: false
+        },
+        "aref": "string",
+        "filters": []
+    }
+}
+
+
+
+
+
+
+{
+    "action": {
+        "module": "multimedia",
+        "value": "text",
+        "data": {
+            "file": "node",
+            "default-sound": "notif.mp3",
+            "vibration": 0.5,
+            "background-color": "#00FFFF"
+        },
+        "aref": "string",
+        "filters": []
+    }
+}
