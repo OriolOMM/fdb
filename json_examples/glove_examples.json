@@ -1,4 +1,4 @@
-JSON IMU: {
+{
     "BOARD_ID": "Sensor_1",
     "TYPE": "9dof_imu",
     "DATA": [{
@@ -40,7 +40,7 @@ JSON IMU: {
     }]
 }
 
-JSON light and color: {
+{
     "BOARD_ID": "Sensor_1",
     "TYPE": "light",
     "DATA": [{
@@ -66,7 +66,7 @@ JSON light and color: {
     }]
 }
 
-Sensor Temperature: {
+{
     "BOARD_ID": "Sensor_1",
     "TYPE": "temperature",
     "DATA": [{
