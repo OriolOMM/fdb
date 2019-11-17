@@ -1,0 +1,77 @@
+JSON IMU: {
+    "BOARD_ID": "Sensor_1",
+    "TYPE": "9dof_imu",
+    "DATA": [{
+        "NAME": "ax",
+        "VALUE": -0.257228,
+        "DELTA_T": 199
+    }, {
+        "NAME": "ay",
+        "VALUE": -0.4666,
+        "DELTA_T": 199
+    }, {
+        "NAME": "az",
+        "VALUE": -10.09233,
+        "DELTA_T": 199
+    }, {
+        "NAME": "gx",
+        "VALUE": -0.245,
+        "DELTA_T": 199
+    }, {
+        "NAME": "gy",
+        "VALUE": 3.115,
+        "DELTA_T": 199
+    }, {
+        "NAME": "gz",
+        "VALUE": 1.81125,
+        "DELTA_T": 199
+    }, {
+        "NAME": "mx",
+        "VALUE": 0.35798,
+        "DELTA_T": 199
+    }, {
+        "NAME": "my",
+        "VALUE": 0.36386,
+        "DELTA_T": 199
+    }, {
+        "NAME": "mz",
+        "VALUE": 0.3206,
+        "DELTA_T": 199
+    }]
+}
+
+JSON light and color: {
+    "BOARD_ID": "Sensor_1",
+    "TYPE": "light",
+    "DATA": [{
+        "NAME": "red",
+        "VALUE": 0,
+        "DELTA_T": 4775
+    }, {
+        "NAME": "green",
+        "VALUE": 0,
+        "DELTA_T": 4775
+    }, {
+        "NAME": "blue",
+        "VALUE": 0,
+        "DELTA_T": 4775
+    }, {
+        "NAME": "clear",
+        "VALUE": 0,
+        "DELTA_T": 4775
+    }, {
+        "NAME": "lux",
+        "VALUE": 0,
+        "DELTA_T": 4775
+    }]
+}
+
+Sensor Temperature: {
+    "BOARD_ID": "Sensor_1",
+    "TYPE": "temperature",
+    "DATA": [{
+        "NAME": "degC",
+        "VALUE": 23,
+        "DELTA_T": 3260
+    }]
+}

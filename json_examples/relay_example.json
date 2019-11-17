@@ -1,0 +1,7 @@
+Actuador rele:
+    Si poseu qualsevol valor negation es per sempre {
+        "TY": "ACTION",
+        "ID": "relay",
+        "VALUE": "on",
+        "DELTA_T": 5000
+    }
