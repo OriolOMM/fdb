@@ -14,7 +14,11 @@ services:
     ports:
       - "1880:1880"
     volumes:
-      - node-red:/data
+      - ./node-red/:/data/
+      - ./dashboard/logo.svg:/usr/src/node-red/node_modules/@node-red/editor-client/public/red/images/node-red.svg
+      - ./dashboard/red.js:/usr/src/node-red/node_modules/@node-red/editor-client/public/red/red.js
+      - ./dashboard/test.txt:/usr/src/node-red/node_modules/@node-red/editor-client/public/red/test.txt
+      - ./dashboard/favicon.ico:/usr/src/node-red/node_modules/@node-red/editor-client/public/favicon.ico
     environment:
       - TZ=Europe/Amsterdam
     networks:
