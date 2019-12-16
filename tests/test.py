@@ -42,7 +42,7 @@ while True:
             "value": "torch",
             "data": {
                 "torch": [{
-                    "active": a,
+                    "active": "true",
                     "seconds": 1
                 }],
                 "default-sound": "sound.mp3",
@@ -81,8 +81,8 @@ while True:
         "filters": []
     }
 
-
-    client.publish("3522109c644e08605c46308a880dcb7d/smartphone", payload=bytes(torch), qos=0, retain=False)
+    print("lalas")
+    client.publish("3522109c644e08605c46308a880dcb7d/smartphone", payload=bytes(payload), qos=0, retain=False)
     a = not a
     time.sleep(0.5)
 
