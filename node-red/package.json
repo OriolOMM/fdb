@@ -2,5 +2,9 @@
     "name": "node-red-project",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "private": true
+    "private": true,
+    "dependencies": {
+        "node-red-node-rbe": "~0.2.6",
+        "node-red-node-tail": "~0.1.1"
+    }
 }

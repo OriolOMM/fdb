@@ -30,7 +30,7 @@
      "types": [
       "complete"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/common/24-complete.js"
@@ -40,7 +40,7 @@
      "types": [
       "catch"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/common/25-catch.js"
@@ -50,7 +50,7 @@
      "types": [
       "status"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/common/25-status.js"
@@ -61,7 +61,7 @@
       "link in",
       "link out"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/common/60-link.js"
@@ -71,7 +71,7 @@
      "types": [
       "comment"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/common/90-comment.js"
@@ -81,7 +81,7 @@
      "types": [
       "unknown"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/common/98-unknown.js"
@@ -161,7 +161,7 @@
      "types": [
       "exec"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/function/90-exec.js"
@@ -171,7 +171,7 @@
      "types": [
       "tls-config"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/network/05-tls.js"
@@ -181,7 +181,7 @@
      "types": [
       "http proxy"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/network/06-httpproxy.js"
@@ -214,7 +214,7 @@
      "types": [
       "http request"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/network/21-httprequest.js"
@@ -227,7 +227,7 @@
       "websocket-listener",
       "websocket-client"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/network/22-websocket.js"
@@ -239,7 +239,7 @@
       "tcp out",
       "tcp request"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/network/31-tcpin.js"
@@ -250,7 +250,7 @@
       "udp in",
       "udp out"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/network/32-udp.js"
@@ -260,7 +260,7 @@
      "types": [
       "csv"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/parsers/70-CSV.js"
@@ -270,7 +270,7 @@
      "types": [
       "html"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/parsers/70-HTML.js"
@@ -290,7 +290,7 @@
      "types": [
       "xml"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/parsers/70-XML.js"
@@ -300,7 +300,7 @@
      "types": [
       "yaml"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/parsers/70-YAML.js"
@@ -311,7 +311,7 @@
       "split",
       "join"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/sequence/17-split.js"
@@ -321,7 +321,7 @@
      "types": [
       "sort"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/sequence/18-sort.js"
@@ -331,7 +331,7 @@
      "types": [
       "batch"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/sequence/19-batch.js"
@@ -342,7 +342,7 @@
       "file",
       "file in"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/storage/10-file.js"
@@ -352,7 +352,7 @@
      "types": [
       "watch"
      ],
-     "enabled": true,
+     "enabled": false,
      "local": false,
      "module": "node-red",
      "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/storage/23-watch.js"
@@ -361,8 +361,8 @@
   },
   "node-red-node-rbe": {
    "name": "node-red-node-rbe",
-   "version": "0.2.5",
-   "local": false,
+   "version": "0.2.6",
+   "local": true,
    "nodes": {
     "rbe": {
      "name": "rbe",
@@ -370,26 +370,26 @@
       "rbe"
      ],
      "enabled": true,
-     "local": false,
+     "local": true,
      "module": "node-red-node-rbe",
-     "file": "/usr/src/node-red/node_modules/node-red-node-rbe/rbe.js"
+     "file": "/data/node_modules/node-red-node-rbe/rbe.js"
     }
    }
   },
   "node-red-node-tail": {
    "name": "node-red-node-tail",
-   "version": "0.0.3",
-   "local": false,
+   "version": "0.1.1",
+   "local": true,
    "nodes": {
     "tail": {
      "name": "tail",
      "types": [
       "tail"
      ],
-     "enabled": true,
-     "local": false,
+     "enabled": false,
+     "local": true,
      "module": "node-red-node-tail",
-     "file": "/usr/src/node-red/node_modules/node-red-node-tail/28-tail.js"
+     "file": "/data/node_modules/node-red-node-tail/28-tail.js"
     }
    }
   }
@@ -401,13 +401,17 @@
     "view": {
      "view-show-grid": true,
      "view-snap-grid": true,
-     "view-grid-size": 20,
+     "view-grid-size": "20",
      "view-node-status": true,
      "view-node-show-label": true,
      "view-show-tips": false
+    },
+    "context": {
+     "flowRefresh": true
     }
    },
-   "menu-menu-item-sidebar": true
+   "menu-menu-item-sidebar": true,
+   "menu-menu-item-palette": false
   }
  }
 }

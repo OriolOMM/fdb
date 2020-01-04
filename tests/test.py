@@ -20,16 +20,16 @@ client.on_message = on_message
 client.connect("mqtt.iglor.es", 8080, 60)
 
 a = True
-while True:
+while a:
     payload = {
         "action": {
             "module": "multimedia",
             "value": "text",
             "data": {
-                "file": "Hola Claudia",
+                "file": "Hola Claudia2",
                 "default-sound": "notif.mp3",
-                "vibration": 0,
-                "background-color": "#0041F1"
+                "vibration": 1,
+                "background-color": "#0041F1",
             },
             "aref": "string",
             "filters": []
@@ -42,16 +42,18 @@ while True:
             "value": "torch",
             "data": {
                 "torch": [{
-                    "active": "true",
-                    "seconds": 1
+                    "active": False
                 }],
                 "default-sound": "sound.mp3",
-                "vibration": 1
+                "vibration": 10,
+                "loop": False
             },
         },
         "aref": "string",
         "filters": []
     }
+
+    "file": env.get("URL"),
 
     question = {
         "action": {
@@ -74,15 +76,68 @@ while True:
                     },
                 ],
                 "default-sound": "sound.mp3",
-                "vibration": 0.1
+                "vibration": 1
             },
         },
         "aref": "string",
         "filters": []
     }
 
+    colors = {
+        "action": {
+            "module": "color",
+            "value": "color",
+            "data": {
+                "color": [{
+                    "color": "#00FFFF",
+                    "seconds": 0.05
+                },
+                {
+                    "color": "#FFFFFF",
+                    "seconds": 0.05
+                },
+                {
+                    "color": "#FF0000",
+                    "seconds": 0.05
+                },
+                {
+                    "color": "#0000FF",
+                    "seconds": 0.05
+                },
+                {
+                    "color": "#000000",
+                    "seconds": 0.05
+                },
+                {
+                    "color": "#00FF00",
+                    "seconds": 0.05
+                }],
+                "default-sound":"sound.mp3",
+                "vibration": 1,
+                "loop": True
+            },
+            "aref": "string",
+            "filters": []
+        }
+    }
+
+    update =  {
+        "action": {
+            "module": "update",
+            "value": "medias",
+            "data": {},
+            "aref": "string",
+            "filters": []
+        }
+    }
+
     print("lalas")
-    client.publish("3522109c644e08605c46308a880dcb7d/smartphone", payload=bytes(payload), qos=0, retain=False)
+    client.publish(
+        "3522109c644e08605c46308a880dcb7d/smartphone",
+        payload=bytes(colors),
+        qos=0,
+        retain=False
+    )
     a = not a
     time.sleep(0.5)
 
@@ -90,4 +145,4 @@ while True:
 # handles reconnecting.
 # Other loop*() functions are available that give a threaded interface and a
 # manual interface.
-client.loop_forever()
+#client.loop_forever()

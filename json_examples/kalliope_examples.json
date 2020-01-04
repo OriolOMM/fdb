@@ -34,11 +34,6 @@
     }
 }
 
-
-
-
-
-
 {
     "action": {
         "module": "multimedia",
@@ -53,3 +48,56 @@
         "filters": []
     }
 }
+
+{
+    "action": {
+        "module": "update",
+        "value": "medias",
+        "data": {},
+        "aref": "string",
+        "filters": []
+    }
+}
+
+{
+    "action": {
+        "module": "color",
+        "value": "color",
+        "data": {
+            "​color​": [{
+                "color": "#00FFFF",
+                "seconds": 2.5
+            },
+            {
+                "color": "#000000",
+                "seconds": 2.5
+            }],
+            "default-sound":"sound.mp3",
+            "vibration": 0.5,
+            "loop": false
+        },
+        "aref": "string",
+        "filters": []
+    }
+}
+
+let json = '{'+
+    '	"action": {'+
+    '		"module": "hardware",'+
+    '		"value": "torch",'+
+    '		"data": {'+
+    '			"torch": [{'+
+    '				"active": "True",' +
+    '				"seconds": 1' +
+    '			},'+
+    '           {' +
+    '				"active": "False",' +
+    '				"seconds": 1' +
+    '			}]' +
+    '			"default-sound": "sound.mp3",'+
+    '			"vibration":' + env.get("VIBRATION") + ','+
+    '			"loop": "false"'+
+    '		},'+
+    '		"aref": "string"'+
+    '	}'+
+    '}'
