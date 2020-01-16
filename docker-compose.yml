@@ -3,9 +3,7 @@ networks:
   fdb-net:
 
 volumes:
-  mqtt:
   node-red:
-  flogo:
 
 services:
   node-red:
@@ -21,17 +19,6 @@ services:
       - ./dashboard/favicon.ico:/usr/src/node-red/node_modules/@node-red/editor-client/public/favicon.ico
     environment:
       - TZ=Europe/Amsterdam
-    networks:
-      - fdb-net
-  
-  mqtt:
-    container_name: mqtt
-    image: eclipse-mosquitto
-    ports:
-      - "1883:1883"
-      - "9001:9001"
-    volumes:
-      - mqtt:/mosquitto/data
     networks:
       - fdb-net
   
