@@ -101,3 +101,63 @@ let json = '{'+
     '		"aref": "string"'+
     '	}'+
     '}'
+
+
+    {
+        "action": {
+            "module": "hardware",
+            "value": "torch",
+            "data": {
+                "torch": [{
+                    "active": true,
+                    "seconds": 1
+                },
+                {
+                    "active": false,
+                    "seconds": 1
+                }],
+                "default-sound": "",
+                "vibration": 1,
+                "loop": true
+            },
+        },
+        "aref": "string",
+        "filters": []
+    }
+
+    {
+        "action": {
+            "module": "hardware",
+            "value": "torch",
+            "data": {
+                "torch": [{
+                    "active": true,
+                    "seconds": 1
+                },
+                {
+                    "active": always_on,
+                    "seconds": 1
+                }],
+                "default-sound": "",
+                "vibration": 1,
+                "loop": false
+            },
+        },
+        "aref": "string",
+        "filters": []
+    }
+
+    {
+        "action": {
+            "module": "multimedia",
+            "value": "text",
+            "data": {
+                "file": "test",
+                "default-sound": "",
+                "vibration": 1,
+                "background-color": #FFFFFF,
+            },
+            "aref": "string",
+            "filters": []
+        }
+    }
